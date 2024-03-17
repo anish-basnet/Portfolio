@@ -1,0 +1,23 @@
+#for Frontend
+
+# dependencies
+portfolio-frontend/node_modules
+portfolio-frontend/.pnp
+portfolio-frontend/.pnp.js
+
+# testing
+portfolio-frontend/coverage
+
+# production
+portfolio-frontend/build
+
+# misc
+portfolio-frontend/.DS_Store
+portfolio-frontend/.env.local
+portfolio-frontend/.env.development.local
+portfolio-frontend/.env.test.local
+portfolio-frontend/.env.production.local
+
+portfolio-frontend/npm-debug.log*
+portfolio-frontend/yarn-debug.log*
+portfolio-frontend/yarn-error.log*
