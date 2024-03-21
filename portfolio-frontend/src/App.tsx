@@ -9,7 +9,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/signup" element={<RegisterPage isLoginPage={false}/>} />
+        <Route path="/login" element={<RegisterPage isLoginPage={true}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

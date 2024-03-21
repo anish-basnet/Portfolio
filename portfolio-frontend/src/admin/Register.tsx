@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { RegisterFormValues } from "../type/global";
+import { RegisterFormValues, RegisterPageProps } from "../type/global";
 import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineVisibilityOff } from "react-icons/md";
-import { FaGoogle } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export const Register = () => {
+export const Register = (props: RegisterPageProps) => {
   const {
     register,
     handleSubmit,
@@ -91,9 +90,19 @@ export const Register = () => {
           className="border-2 w-full rounded-md my-4 py-1 hover:secondary-bg-color hover:secondary-text-color"
           type="submit"
         >
-          SignUp
+          {props.isLoginPage ? 'Login': 'Sign Up'}
         </button>
       </form>
+      {props.isLoginPage ? (
+              <div className="flex gap-3">
+              <p>Don't have an Account?</p><Link className="text-blue-500" to="/signup">Sign Up</Link>
+            </div>
+      ): (
+        <div className="flex gap-3">
+        <p>Already has an Account?</p><Link className="text-blue-500" to="/login">Login</Link>
+      </div>
+      )}
+
     </div>
   );
 };

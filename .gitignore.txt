@@ -21,3 +21,8 @@ portfolio-frontend/.env.production.local
 portfolio-frontend/npm-debug.log*
 portfolio-frontend/yarn-debug.log*
 portfolio-frontend/yarn-error.log*
+
+# for backend
+
+portfolio-backend/.venv
+portfolio-backend/.idea

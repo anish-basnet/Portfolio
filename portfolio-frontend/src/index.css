@@ -4,7 +4,7 @@
 
 @layer components{
     .primary-bg-color{
-        @apply bg-slate-900;
+        @apply bg-slate-950;
     }
     .primary-text-color{
         @apply text-white;
@@ -17,10 +17,10 @@
         @apply bg-white;
     }
     .secondary-text-color{
-        @apply text-slate-900;
+        @apply text-slate-950;
     }
     .secondary-border-color{
-        @apply border-slate-900;
+        @apply border-slate-950;
     }
 }
 
