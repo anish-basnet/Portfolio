@@ -28,3 +28,4 @@ portfolio-backend/.venv
 portfolio-backend/.idea
 portfolio-backend/portfolio/__pycache__
 portfolio-backend/config.py
+portfolio-backend/config.py
