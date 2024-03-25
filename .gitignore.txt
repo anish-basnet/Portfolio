@@ -1,4 +1,4 @@
-#for Frontend
+0#for Frontend
 
 # dependencies
 portfolio-frontend/node_modules
@@ -26,3 +26,5 @@ portfolio-frontend/yarn-error.log*
 
 portfolio-backend/.venv
 portfolio-backend/.idea
+portfolio-backend/portfolio/__pycache__
+portfolio-backend/config.py
